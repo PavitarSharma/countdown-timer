@@ -1,0 +1,59 @@
+.timer_display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.timer_box {
+  background: rgb(237, 41, 214);
+  background: linear-gradient(
+    45deg,
+    rgba(237, 41, 214, 1) 11%,
+    rgba(0, 212, 255, 1) 75%
+  );
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.timer_box span:first-child {
+    font-weight: 600;
+    color: white;
+    font-size: 24px;
+}
+
+.timer_box span:last-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .timer_box {
+         width: 60px;
+         height: 60px;
+ 
+    }
+}
+
+@media (max-width: 327px) {
+    .timer_box {
+         width: auto;
+         height: auto;
+         padding: 12px;
+ 
+    }
+
+    .timer_box span:first-child {
+        font-size: 16px;
+    }
+    
+    .timer_box span:last-child {
+        font-size: 10px;
+    }
+}
